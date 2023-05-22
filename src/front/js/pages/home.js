@@ -57,11 +57,15 @@ useEffect(async () => {
  initMap()
 }, [])
 
-
+//en el div app se va a generar el mapa 
 	return (
 		<>
-		<div id="map" className="molongui"></div>
-		
+		<div id="map" className="molongui"></div> 
+		<div>
+			<p>tienes que tocar los estilos del mapa desde el panel de control de la api de maps</p>
+			<h1>notas para ver el mapa:</h1>
+			<p>clic derecho inspeccionar, abre el div app donde renderiza todo tu react <br></br> selecciona el div con id "map" y quitale el position:relative</p>
+		</div>
 		
 		</>
 	);
