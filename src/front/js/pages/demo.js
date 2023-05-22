@@ -6,8 +6,11 @@ import { Context } from "../store/appContext";
 export const Demo = () => {
 	const { store, actions } = useContext(Context);
 
+//funcion del mapa para que funcione
+	
 	return (
 		<div className="container">
+			<h1>ESTOY EN EL DEMO</h1>
 			<ul className="list-group">
 				{store.demo.map((item, index) => {
 					return (
@@ -36,6 +39,7 @@ export const Demo = () => {
 			<Link to="/">
 				<button className="btn btn-primary">Back home</button>
 			</Link>
+			
 		</div>
 	);
 };
